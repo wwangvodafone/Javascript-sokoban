@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+	<title>SokoBan</title>
+	<link rel="stylesheet" href="sokoban.css">
+	<script src="drawing.js"></script>
+</head>
+<body>
+	<canvas id="sokoban" width="480" height="600"></canvas>
+	<img id="box" src="res/box.png">
+	<img id="box_over" src="res/box_over.png">
+	<img id="wall" src="res/wall.png">
+	<img id="person" src="res/person.png">
+	<img id="position" src="res/position.png">
+	<img id="soko" src="res/wall_black.png">
+
+	<div><p id="steps"></p></div>
+	<script>
+		var context = document.getElementById("sokoban").getContext("2d");
+		onDraw(context);
+	</script>
+</body>
+</html>
